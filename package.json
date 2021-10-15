@@ -1,0 +1,33 @@
+{
+  "name": "sample-esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=\"production\" ts-node build.ts",
+    "dev": "run-p watch:*",
+    "watch:build": "ts-node build.ts",
+    "watch:serve": "wait-on public/index.js && reload -d public -b"
+  },
+  "keywords": [],
+  "author": "Junya Kani <ka210n8@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.9",
+    "@types/react": "^17.0.29",
+    "@types/react-dom": "^17.0.9",
+    "@types/sass": "^1.16.1",
+    "esbuild": "^0.13.5",
+    "npm-run-all": "^4.1.5",
+    "reload": "^3.2.0",
+    "sass": "^1.43.2",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4",
+    "wait-on": "^6.0.0"
+  }
+}
